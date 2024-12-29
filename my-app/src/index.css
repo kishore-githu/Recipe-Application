@@ -1,0 +1,139 @@
+/* General body styling */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #7A38F8, #C54BBC, #954BC5, #9A6DBB, #FF6347, #808080, #4B0082, #7B68EE);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Gradient animation for the background */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Input and textarea styling */
+input,
+textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #00BFFF; /* Deep Sky Blue text */
+  caret-color: #FF6347; /* Tomato red caret */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Soft white placeholder */
+  font-style: italic;
+  transition: color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #FF6347;
+  box-shadow: 0 0 10px rgba(255, 99, 71, 0.7);
+  background: rgba(255, 255, 255, 0.25);
+  color: #FAEBD7; /* AntiqueWhite text */
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  background: #FF6347; /* Tomato red */
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #4B0082; /* Indigo on hover */
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Form and list styling */
+form {
+  margin: 20px auto;
+  max-width: 500px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 20px auto;
+  max-width: 500px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Heading animation */
+h1 {
+  font-size: 36px;
+  margin-top: 20px;
+  animation: textAnimation 2s ease infinite alternate;
+}
+
+/* Text color animation for headings */
+@keyframes textAnimation {
+  0% {
+    color: #FF6347; /* Tomato Red */
+  }
+  100% {
+    color: #4B0082; /* Indigo */
+  }
+}
+
+/* Search bar container */
+.search-bar {
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.search-bar input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #00BFFF; /* Deep Sky Blue */
+  caret-color: #FF6347;
+}
+
+.search-bar input:focus {
+  border-color: #FF6347;
+  box-shadow: 0 0 10px rgba(255, 99, 71, 0.7);
+}
